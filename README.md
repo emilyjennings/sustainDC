@@ -4,16 +4,18 @@ The user wants to find out how to live more sustainably in DC through ideas and 
 
 I can use the foursquare or yelp api to import locations and businesses to choose from.
 
-Users have many comments and likes
+Users have many comments and saves
 Likes belong to users and comments
 Comments belong to users, categories and locations
-Comments have many likes
+Comments have many saves
 Locations have many comments
 categories have many comments
 
 migrations:
-Users - username, password, tagline
+Users - username, password, bio
 Locations - title
 categories - name, comment_id
 comments - content, user_id, location_id
-Likes - user_id, comment_id
+Saves - user_id, comment_id
+
+User logs in and sees a dashboard with their bio, name, profile pic, and their saved comments/locations
